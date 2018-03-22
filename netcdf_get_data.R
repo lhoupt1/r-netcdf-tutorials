@@ -26,3 +26,11 @@ attributes(nc$var)$names[1]
 #get a variable's data
 dat <- ncvar_get(nc, attributes(nc$var)$names[1])
 
+#check the datasets dimensions
+dim(dat)
+
+#print the data
+dat
+
+#5 rows and 5 columns near the middle of the dataset
+dat[700:704, 300:304]
